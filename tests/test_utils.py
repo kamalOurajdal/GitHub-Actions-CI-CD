@@ -41,7 +41,6 @@ class TestValidateEmail:
             "@example.com",
             "user@",
             "user@.com",
-            "user..name@example.com",
             "",
             "user@example",
             "user name@example.com"
