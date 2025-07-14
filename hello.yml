@@ -1,0 +1,13 @@
+# .github/workflows/hello.yml
+name: Hello CI           # Friendly name shown in GitHub UI
+
+# 1️⃣ When to run
+on: [push]               # Run on every push to any branch
+
+jobs:                    # 2️⃣ One or more jobs
+  build:                 # Job ID
+    runs-on: ubuntu-latest  # Runner environment
+
+    steps:               # 3️⃣ Steps to execute
+      - name: Say hello  # Step name
+        run: echo "Hello from GitHub Actions!"
